@@ -16,4 +16,8 @@ figure(3);
 figure(4);
 [x, t] = Reconstroi(X, f);
 
-
+%c)
+t = 0:Ta:1-Ta;
+y = 10 + 14*cos(20*pi*t - pi/3) + 8*cos(40*pi*t + pi/2);
+figure(4);
+[X, f] = Espetro(y, Ta);
