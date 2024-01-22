@@ -23,7 +23,7 @@ num=[1 -2*cos(teta) 1];
 den=[1 -2*R*cos(teta) R^2];
 figure(5);
 [H, f] = respfreq(num, den, fa);
-
+plot(f, abs(H));
 %b)
 y = filter(num, den, xr);
 Espetro(y, 1/fa);
